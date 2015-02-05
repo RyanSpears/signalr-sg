@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body ng-app="app">
+
+    <div ng-controller="mainCtrl as vm">
+        <h3>Messages {{vm.messages.length}}</h3>
+        <ul>
+            <li ng-repeat="message in vm.messages">{{message}}</li>
+        </ul>
+    </div>
+
+    <script src="Scripts/jquery-1.6.4.js"></script>
+    <script src="Scripts/jquery.signalR-2.0.1.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-animate.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/angular-sanitize.js"></script>
+    <script src="Scripts/angular-signalr-hub.js"></script>
+    <script src="http://localhost:6024/signalr/hubs"></script>
+
+    <script src="app.js"></script>
+    <script src="mainCtrl.js"></script>
+</body>
+</html>
